@@ -29,3 +29,5 @@ fviz_pca_biplot(res.pca, repel = TRUE,
                 col.var = "#2E9FDF", # Variables color
                 col.ind = "#696969"  # Individuals color
 )
+
+summary(res.pca)
