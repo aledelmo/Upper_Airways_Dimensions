@@ -45,7 +45,7 @@ measurements_predict = cbind(measurements, predicted_intervals)
 p <- (ggplot(measurements_predict, aes(x=age.en.mois, y=AP.cricoïde)) + geom_point() + 
         geom_line(aes(y = fit), col='blue',size = 1) + geom_ribbon( aes(ymin = lwr, ymax = upr, colour = 'gray'), alpha = .15, linetype = 0)
       + theme_ipsum(grid=FALSE, axis=TRUE, axis_title_just='c') + 
-        labs(x="Age (months)", y="Diameter (mm)", title="Anteroposterior Glottic Diameters", caption=paste("AIC", AIC(model_cricoid))) +
+        labs(x="Age (months)", y="Diameter (mm)", title="Anteroposterior Cricoid Diameters", caption=paste("AIC", AIC(model_cricoid))) +
         ylim(0, 25) + guides(colour=FALSE))
 print(p)
 

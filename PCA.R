@@ -1,3 +1,6 @@
+library(factoextra)
+library("RColorBrewer")
+
 rm(list = ls(all.names = TRUE)) 
 gc()
 
